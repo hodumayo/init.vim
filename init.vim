@@ -13,9 +13,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'abecodes/tabout.nvim'
 Plug 'morhetz/gruvbox'
 call plug#end()
-inoremap <silent><expr> <S-J> coc#pum#visible() ? coc#pum#next(1) : "\<S-J>"
-inoremap <silent><expr> <Tab> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"
-inoremap <silent><expr><S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 nnoremap <silent><C-S-t> :enew<Enter>
 nnoremap <silent><C-S-tab> :bprevious!<Enter>
 nnoremap <silent><C-tab> :bnext!<Enter>
