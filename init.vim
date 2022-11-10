@@ -56,8 +56,8 @@ require("tabout").setup({
 		{open = '(', close = ')'},
 		{open = '[', close = ']'},
 		{open = '{', close = '}'},
-    {open = '<', close = '>'},
-    {open = '/*', close = '*/'},
+        {open = '<', close = '>'},
+        {open = '/*', close = '*/'},
 	},
 })
 local function replace_keycodes(str)
@@ -85,3 +85,9 @@ function _G.esc_binding()
   else
       return replace_keycodes("<C-[>")
   end
+end
+vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_binding()", {expr = true})
+vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_binding()", {expr = true})
+vim.api.nvim_set_keymap("i", "<C-[>", "v:lua.esc_binding()", {expr = true})
+EOF
+"highlight Search guibg='Purple' guifg='NONE'
