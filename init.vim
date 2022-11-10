@@ -25,7 +25,7 @@ nnoremap <silent><C-S-tab> :bprevious!<Enter>
 nnoremap <silent><C-tab> :bnext!<Enter>
 nnoremap <silent><C-w> :bd<Enter> 
 nnoremap <silent><C-S-w> :bd!<Enter> 
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent cindent smartindent
 set incsearch hlsearch
 set encoding=utf-8
 set number
