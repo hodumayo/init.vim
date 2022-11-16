@@ -13,6 +13,8 @@ Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'jasonwoodland/vim-html-indent'
 Plug 'github/copilot.vim'
 imap <silent><script><expr> <C-S-[> copilot#Accept("\<CR>")
 let g:copilot_no_tab_map = v:true
